@@ -1,4 +1,4 @@
-# abc.website
+# alethio landing-page
 
 
 ## Prerequisitions
