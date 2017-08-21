@@ -1,3 +1,45 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+error_log
+*.idea
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
 # Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+#sass cache
+.sass-cache
+
+# Optional npm cache directory
+.npm
+
+#deploy scripts
+.deploy
+
+#surge CNAME
+CNAME
+
+#compiled assets
+library/css/main.css
+library/css/main.css.map
+library/js/application.js
+library/js/application.min.js
