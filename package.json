@@ -1,0 +1,30 @@
+{
+  "name": "simple-web-app",
+  "version": "1.0.0",
+  "description": "The most simple web app with grunt tasks. It's suppose to serve as a starting point for simple 1-pager web presentations.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-Mob/Simple-Web-Init.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Digital-Mob/Simple-Web-Init/issues"
+  },
+  "homepage": "https://github.com/Digital-Mob/Simple-Web-Init#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+	"grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

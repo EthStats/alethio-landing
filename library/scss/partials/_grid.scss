@@ -1,0 +1,58 @@
+/*** Grid ***/
+
+@mixin grid-col {
+	float: left;
+    padding: 0;
+}
+
+/** Mobile **/
+@media (max-width: 767px) {
+
+	.m-all {
+		@include grid-col;
+		width: 100%;
+	}
+}
+
+/** Tablet **/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.t-all {
+		@include grid-col;
+		width: 100%;
+	}
+
+	.t-1of2 {
+		@include grid-col;
+		width: 50%;
+	}
+
+	.t-1of5 {
+		@include grid-col;
+		width: 20%;
+	}
+}
+
+/** Desktop **/
+@media (min-width: 1024px) {
+
+	.d-all {
+		@include grid-col;
+		width: 100%;
+	}
+
+	.d-1of2 {
+		@include grid-col;
+		width: 50%;
+	}
+
+	.d-1of3 {
+		@include grid-col;
+		width: 33.33%;
+	}
+
+	.d-1of5 {
+		@include grid-col;
+		width: 20%;
+	}
+}

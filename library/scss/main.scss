@@ -1,0 +1,64 @@
+/** Main stylesheet **/
+
+// variables
+$black: #000;
+$white: #fff;
+$gray: #5f5f5f;
+
+$blue: #36a2eb;
+$red: #ff3322;
+$green: #34bf49;
+$darkblue: #363a47;
+
+$text-color: $black;
+$link-color: $blue;
+$link-hover: darken($link-color, 0.1);
+
+$main-font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+// partials
+@import "partials/normalize";
+@import "partials/grid";
+
+// modules
+@import "modules/forms";
+@import "modules/buttons";
+
+// breakpoints
+// Base = desktop large
+@import "breakpoints/base";
+
+// Large large
+@media only screen and (max-width: 1400px) {
+    @import "breakpoints/1400down";
+}
+
+// Large Viewing Size
+@media only screen and (max-width: 1240px) {
+    @import "breakpoints/1240down";
+}
+
+// Large Viewing Size
+@media only screen and (max-width: 1080px) {
+    @import "breakpoints/1080down";
+}
+
+// Tablet Landscape
+@media only screen and (max-width: 1023px) {
+    @import "breakpoints/1023down";
+}
+
+// Tablet Portrait Viewing Size
+@media only screen and (max-width: 767px) {
+    @import "breakpoints/767down";
+}
+
+// Slightly Larger Mobile
+@media only screen and (max-width: 410px) {
+    @import "breakpoints/410down";
+}
+
+// Mobile
+@media only screen and (max-width: 374px) {
+    @import "breakpoints/374down";
+}
