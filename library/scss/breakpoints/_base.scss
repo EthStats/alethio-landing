@@ -1,92 +1,121 @@
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 html, body {
-    overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 body {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: $text-color;
-    background-color: $white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  font-family: 'Interface', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $text-color;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
 
-    -ms-word-break: break-all;
-    word-break: keep-all; //non-standart css for webkit
-    -ms-word-wrap: normal;
-    word-wrap: normal;
+  -ms-word-break: break-all;
+  word-break: keep-all; //non-standart css for webkit
+  -ms-word-wrap: normal;
+  word-wrap: normal;
 
-    // cleaning up the ragged lines and breaks
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    hyphens: none;
+  // cleaning up the ragged lines and breaks
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 
-    // sets a minimum number of characters before and after the break
-    -webkit-hyphenate-before: 2;
-    -webkit-hyphenate-after: 3;
-    hyphenate-lines: 3;
+  // sets a minimum number of characters before and after the break
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
 
-    // enabling fancy ligatures when available
-    -webkit-font-feature-settings: "liga", "dlig";
-    -moz-font-feature-settings: "liga=1, dlig=1";
-    -ms-font-feature-settings: "liga", "dlig";
-    -o-font-feature-settings: "liga", "dlig";
-    font-feature-settings: "liga", "dlig";
+  // enabling fancy ligatures when available
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
 
-    &:last-child {
-        margin: 0;
-    }
+  &:last-child {
+    margin: 0;
+  }
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-    text-rendering: optimizelegibility;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    margin: 1em 0;
+  text-rendering: optimizelegibility;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 1em 0;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
 h1, .h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 h2, .h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h3, .h3 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 h4, .h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 h5, .h5 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 img {
-    display: inline-block;
-    width: auto;
-    height: auto;
+  display: inline-block;
+  width: auto;
+  height: auto;
 }
 
 .wrap {
-    max-width: 1080px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
 }
+
+.main {
+  position: relative;
+
+  #myCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+
+  .content {
+
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 140px auto 0;
+    }
+
+    .headline {
+      margin-top: 140px;
+      text-align: center;
+      font-size: 32px;
+    }
+
+  }
+}
+
+

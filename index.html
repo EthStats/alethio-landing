@@ -10,6 +10,7 @@
 
     <!-- Using a google font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://rsms.me/interface/interface.css" rel="stylesheet">
 
     <!-- Main Styles File -->
     <link rel="stylesheet" href="library/css/main.css" type="text/css" media="all">
@@ -21,7 +22,13 @@
 </head>
 
 <body>
-    <canvas id="myCanvas" resize style="width: 100%;"></canvas>
+    <div class="main">
+        <canvas id="myCanvas" resize style="width: 100%;"></canvas>
+        <div class="content">
+            <img class="logo" src="library/img/blueLogo.png"/>
+            <p class="headline">blockchain: insights</p>
+        </div>
+    </div>
 </body>
 
 <!-- Starting point of our custom scripts -->
@@ -32,6 +39,7 @@
 <script src="library/js/vendor/ScrollMagic.min.js"></script>
 <script src="library/js/vendor/animation.gsap.min.js"></script>
 <script src="library/js/vendor/debug.addIndicators.min.js"></script>
-<script type="text/paperscript" src="library/js/application.min.js" canvas="myCanvas"></script>
+<script src="library/js/application.min.js"></script>
+<script type="text/paperscript" src="library/js/paperDemo.js" canvas="myCanvas"></script>
 
 </html>
