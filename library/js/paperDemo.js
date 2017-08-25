@@ -18,7 +18,7 @@ var h = Math.max( body.scrollHeight, body.offsetHeight,
 
 var numberOfBalls = 20;
 
-for ( var contor = 0; contor< numberOfBalls; contor++ ) {
+for ( var contor = 0; contor < numberOfBalls; contor++ ) {
   var x = Math.floor(Math.random() * w + 1);
   var y = Math.floor(Math.random() * h + 1);
   var arrayCoord = [x, y];
@@ -32,7 +32,7 @@ for (var i = 0, l = ballPositions.length; i < l; i++) {
   var circlePath = new Path.Circle({
     center: ballPositions[i],
     radius: 5,
-    fillColor: new Color(0, 0, 0, 0.1)
+    fillColor: '#2C115D'
   });
   circlePaths.push(circlePath);
 }
@@ -40,7 +40,7 @@ for (var i = 0, l = ballPositions.length; i < l; i++) {
 var largeCircle = new Path.Circle({
   center: [676, 433],
   radius: 2,
-  fillColor: new Color(0, 0, 0, 0.1)
+  fillColor:  '#2C115D'
 });
 circlePaths.push(largeCircle);
 
@@ -53,7 +53,6 @@ var connections = new Group();
 function generateConnections(paths) {
   // Remove the last connection paths:
   connections.children = [];
-
   for (var i = 0, l = paths.length; i < l; i++) {
     for (var j = i - 1; j >= 0; j--) {
       var path = metaball(paths[i], paths[j], 0.5, handle_len_rate, 300);
@@ -136,3 +135,25 @@ function getVector(radians, length) {
   });
 }
 
+// setInterval(function() {
+//   project.activeLayer.removeChildren();
+//   project.view.draw();
+//   ballPositions = [];
+//   console.log('reload');
+//   for ( var contor = 0; contor < numberOfBalls; contor++ ) {
+//     var x = Math.floor(Math.random() * w + 1);
+//     var y = Math.floor(Math.random() * h + 1);
+//     var arrayCoord = [x, y];
+//     ballPositions.push(arrayCoord);
+//   }
+//   circlePaths = [];
+//   for (var i = 0, l = ballPositions.length; i < l; i++) {
+//     var circlePath = new Path.Circle({
+//       center: ballPositions[i],
+//       radius: 5,
+//       fillColor: '#2C115D'
+//     });
+//     circlePaths.push(circlePath);
+//   }
+//   generateConnections(circlePaths);
+// }, 4000);
