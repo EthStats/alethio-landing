@@ -32,7 +32,7 @@ for (var i = 0, l = ballPositions.length; i < l; i++) {
   var circlePath = new Path.Circle({
     center: ballPositions[i],
     radius: 5,
-    fillColor: new Color(0.5, 0.5, 0.5, 0.1)
+    fillColor: new Color(0, 0, 0, 0.1)
   });
   circlePaths.push(circlePath);
 }
@@ -40,7 +40,7 @@ for (var i = 0, l = ballPositions.length; i < l; i++) {
 var largeCircle = new Path.Circle({
   center: [676, 433],
   radius: 2,
-  fillColor: new Color(0.5, 0.5, 0.5, 0.1)
+  fillColor: new Color(0, 0, 0, 0.1)
 });
 circlePaths.push(largeCircle);
 
